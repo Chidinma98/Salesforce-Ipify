@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small">
+                My IP
+            </lightning-icon>
+        </h3>
+        <div slot ="footer">
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+        <lightning-button label= "Get My IP" onclick={getIp}  ></lightning-button></div>
+
+        <div class="slds-p-around_medium lgc-bg" >
+            <lightning-textarea  value={myIp} rows="7" styles="height:150px;" >
+
+            </lightning-textarea>
+        </div>
+    </lightning-card> 
+</template>
